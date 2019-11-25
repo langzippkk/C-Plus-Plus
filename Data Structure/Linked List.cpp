@@ -9,9 +9,12 @@ struct node
 
 node *start;
 
+// define a pointer, start, point to a node
+
 void insert(int x)
 {
 	node *t = start;
+ // define a pointer t, point to start, which is another pointer
 	if (start != NULL)
 	{
 		while (t->next != NULL)
@@ -25,10 +28,10 @@ void insert(int x)
 	}
 	else
 	{
-		node *n = new node;
-		n->val = x;
-		n->next = NULL;
-		start = n;
+		node *n = new node;   
+		n->val = x;      // (n.value) = x
+		n->next = NULL;  //(n.next) = NULL
+		start = n;      // start point to n
 	}
 }
 
